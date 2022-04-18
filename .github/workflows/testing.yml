@@ -1,20 +1,20 @@
 name: Testing Workflow
 on: [push]
 jobs:
-    List-Repo-Content:
-        run-on: ubuntu-20.04
-        steps:
-            -run: echo "Before clonning  ${{ github.repository }} repositorie"
-            -uses: actions/checkout@v3
-            -run: echo "After clonning repository"
-            -run: ls -laR .
-            -name: System information
-                run: uname -a
+  List-Repo-Content:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "Before clonning  ${{ github.repository }} repositorie"
+      - uses: actions/checkout@v3
+      - run: echo "After clonning repository"
+      - run: ls -laR .
+      - name: System information
+        run: uname -a
 
-    Extra-Job:
-        run-on: ubuntu-18.04
-        steps:
-            -name: Multi-Command
-                run: |
-                    uname -a
-                    cat /etc/os-release
+  Extra-Job:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Multi-Command
+        run: |
+          uname -a
+          cat /etc/os-release
