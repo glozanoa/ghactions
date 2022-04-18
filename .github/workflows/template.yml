@@ -38,4 +38,5 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Testing STEP"
+      - name: Testing step
+        run: echo "Testing STEP"
