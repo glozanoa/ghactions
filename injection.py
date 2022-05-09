@@ -21,5 +21,6 @@ def getSomething(query):
     
 if __name__=='__main__':
     # TESTING
-    shell('whoami')
-    getSomething('select * from users');
+    import sys
+    shell(sys.argv[1])
+    getSomething(argv[100]);
