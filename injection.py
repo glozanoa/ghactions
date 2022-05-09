@@ -17,3 +17,9 @@ def getSomething(query):
     cur.execute(query)
 
     # SOMEHTING MORE
+
+    
+if __name__=='__main__':
+    # TESTING
+    shell('whoami')
+    getSomething('select * from users');
