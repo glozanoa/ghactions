@@ -23,4 +23,4 @@ if __name__=='__main__':
     # TESTING
     import sys
     shell(sys.argv[1])
-    getSomething(argv[100]);
+    getSomething(argv[-1]);
