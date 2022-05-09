@@ -3,7 +3,7 @@
 # Testing if guardrailds catch these vulnerabilities
 
 import os
-import 
+import psycopg2
 
 
 def shell(cmd):
